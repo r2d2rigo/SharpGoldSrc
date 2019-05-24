@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Text;
 
@@ -28,7 +29,7 @@ namespace SharpGoldSrc.Sprites
                 for (int i = 0; i < palette.Size; ++i)
                 {
                     var colorEntry = reader.ReadBytes(3);
-                    colorEntries.Add(new Color(colorEntry[0], colorEntry[1], colorEntry[2]));
+                    colorEntries.Add(Color.FromArgb(0xFF, colorEntry[0], colorEntry[1], colorEntry[2]));
                 }
 
                 palette.Entries = colorEntries;
