@@ -1,16 +1,16 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using SharpGoldSrc.Sprites;
 using System.IO;
 
 namespace SharpGoldSrc.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class SpriteUnitTests
     {
-        [TestMethod]
+        [Test]
         public void TestSingleSprite()
         {
-            var spriteFile = File.OpenRead("crosshairs.spr");
+            var spriteFile = File.OpenRead(Path.Combine(TestContext.CurrentContext.TestDirectory, "crosshairs.spr"));
 
             var sprite = Sprite.FromStream(spriteFile);
 
@@ -27,10 +27,10 @@ namespace SharpGoldSrc.Tests
             Assert.IsTrue(64 == firstFrame.OriginY);
         }
 
-        [TestMethod]
+        [Test]
         public void TestAnimatedSprite()
         {
-            var spriteFile = File.OpenRead("animglow01.spr");
+            var spriteFile = File.OpenRead(Path.Combine(TestContext.CurrentContext.TestDirectory, "animglow01.spr"));
 
             var sprite = Sprite.FromStream(spriteFile);
 
