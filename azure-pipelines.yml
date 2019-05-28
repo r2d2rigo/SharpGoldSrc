@@ -29,18 +29,10 @@ steps:
     feedsToUse: 'select'
     versioningScheme: 'off'
 
-- task: VSTest@2
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet test'
   inputs:
-    testSelector: 'testAssemblies'
-    testAssemblyVer2: '**\*tests*.dll
-      !**\*TestAdapter.dll
-      !**\obj\**'
-    searchFolder: '$(System.DefaultWorkingDirectory)'
-
-# - task: DotNetCoreCLI@2
-#   displayName: 'dotnet test'
-#   inputs:
-#     command: 'test'
-#     projects: '**/*.Tests.csproj'
-#     feedsToUse: 'select'
-#     versioningScheme: 'off'
+    command: 'test'
+    projects: '**/*.Test.csproj'
+    feedsToUse: 'select'
+    versioningScheme: 'off'
