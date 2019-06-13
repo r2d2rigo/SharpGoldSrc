@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SharpGoldSrc</id>
+    <version>$version$</version>
+    <title>SharpGoldSrc</title>
+    <authors>Rodrigo 'r2d2rigo' Diaz</authors>
+    <owners>Rodrigo 'r2d2rigo' Diaz</owners>
+    <licenseUrl>https://github.com/r2d2rigo/SharpGoldSrc/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/r2d2rigo/SharpGoldSrc</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>C# library for reading GoldSrc asset files.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags></tags>
+  </metadata>
+</package>
