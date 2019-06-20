@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace SharpGoldSrc.Wad
+namespace SharpGoldSrc.Wad.Internal
 {
     public struct DirectoryEntry
     {

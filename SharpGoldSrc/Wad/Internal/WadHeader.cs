@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace SharpGoldSrc.Wad
+namespace SharpGoldSrc.Wad.Internal
 {
     internal struct WadHeader
     {
